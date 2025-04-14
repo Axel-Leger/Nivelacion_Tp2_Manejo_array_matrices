@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hola uwu</p>
+    <h1>Ingresar Personas</h1>
+
+    <div class="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ingrese el nombre"/>
+    </div>
+    <div class="">
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" placeholder="Ingrese la edad"/>
+    </div>
+    <div class="">
+        <label for="nota">Nota:</label>
+        <input type="text" id="nota" placeholder="Ingrese la nota"/>
+    </div>
+
+    <button onclick="agregarPersona()">Agregar Persona</button>
+    <button onclick="mostrarDatos()">Mostrar Datos</button>
+
+    <h2>Resultados:</h2>
+    <pre id="resultado"></pre>
+
+
+
+    <script src="/static/script.js"></script>
 </body>
 </html>

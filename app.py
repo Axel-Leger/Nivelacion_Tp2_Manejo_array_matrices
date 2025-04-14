@@ -1,8 +1,12 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
 
 personas = []
+
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 @app.route("/agregar", methods=["POST"])
 def agregar():
